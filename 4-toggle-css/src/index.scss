@@ -67,3 +67,20 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+// ------------------ example begin ------------------
+
+.light-counter-enabled {
+  .counter {
+    color: black;
+    background-color: white;
+  }
+}
+
+.light-counter-disabled {
+  .counter {
+    /* this is the existing code, before implementing a feature */
+    color: white;
+    background-color: black;
+  }
+}

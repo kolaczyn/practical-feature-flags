@@ -1,15 +1,18 @@
-import { flags } from "./flags";
 import { Counter } from "./Counter";
 
 import "./App.css";
 import { About } from "./About";
+import { flags } from "./flags";
 
 export default function App() {
   return (
-    <>
+    <div
+      className={
+        flags.lightCounter ? "light-counter-enabled" : "light-counter-disabled"
+      }
+    >
       <About />
-      <p>The flags is {flags.counter ? "enabled" : "disabled"}</p>
-      {flags.counter && <Counter />}
-    </>
+      <Counter />
+    </div>
   );
 }
