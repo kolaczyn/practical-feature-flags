@@ -3,13 +3,15 @@ import { Counter } from "./Counter";
 
 import "./App.css";
 import { About } from "./About";
+import { CounterOld } from "./CounterOld";
 
 export default function App() {
   return (
     <>
       <About />
-      <p>The flags is {flags.counter ? "enabled" : "disabled"}</p>
-      {flags.counter && <Counter />}
+      <hr />
+      <p>The flag is {flags.improvedCounter ? "enabled" : "disabled"}</p>
+      {flags.improvedCounter ? <Counter /> : <CounterOld />}
     </>
   );
 }

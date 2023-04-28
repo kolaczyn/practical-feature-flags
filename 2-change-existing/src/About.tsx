@@ -1,15 +1,14 @@
 export function About() {
   return (
     <>
-      <h2>Hello World</h2>
-      <p>The most basic example</p>
+      <h2>Changing Existing Feature</h2>
+      <p>What to do if you have to modify an existing feature?</p>
+      <p>You don't!</p>
       <p>
-        You can toggle showing counter by changing <code>counter</code> to{" "}
-        <code>false</code> in the <code>flags.ts</code> file
+        You basically rewrite the feature you want to replace, but keep the
+        exisiting code.
       </p>
-      <p>
-        You can easily add <b>new</b> things to the website
-      </p>
+      <p>You can easily toggle if you want to have a new or an old version</p>
     </>
   );
 }
