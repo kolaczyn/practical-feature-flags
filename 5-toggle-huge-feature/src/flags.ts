@@ -1,3 +1,3 @@
 export const flags = {
-  todoRedesign: true,
+  todoPersist: true,
 };

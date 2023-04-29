@@ -17,10 +17,8 @@ export function TodoList() {
   return (
     <>
       <input ref={ref} />
-      <button onClick={handleAddTodo}>Brand New Todos</button>
-      <br />
-      <span>(the todos are saved as you make them!</span>
-      {todos?.map((todo) => (
+      <button onClick={handleAddTodo}>Add todo</button>
+      {todos.map((todo) => (
         <TodoInput
           completed={todo.completed}
           id={todo.id}

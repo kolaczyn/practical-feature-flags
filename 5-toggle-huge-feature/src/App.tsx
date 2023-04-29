@@ -1,4 +1,5 @@
 import { flags } from "./flags";
+import { TodoList as TodoListOld } from "./todosOld/TodoList";
 import { TodoList } from "./todos/TodoList";
 
 import "./App.css";
@@ -8,7 +9,7 @@ export default function App() {
   return (
     <>
       <About />
-      <TodoList />
+      {flags.todoPersist ? <TodoList /> : <TodoListOld />}
     </>
   );
 }
